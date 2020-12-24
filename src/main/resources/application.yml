@@ -1,0 +1,19 @@
+server:
+  port: 9797
+spring:
+  profiles:
+    active: local
+  datasource:
+    password: TODO0303
+    username: TODO
+    url: jdbc:oracle:thin:@192.168.0.20:1521:XE
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate.format_sql: true
+
+jwt:
+  secret: lamaSecretKey
